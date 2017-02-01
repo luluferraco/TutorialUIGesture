@@ -2,8 +2,8 @@
 //  GameViewController.swift
 //  WatchGame
 //
-//  Created by Pedro Gomes Branco on 26/09/16.
-//  Copyright © 2016 Pedro Gomes Branco. All rights reserved.
+//  Created by Lucas Ferraço on 29/09/16.
+//  Copyright © 2016 Lucas Ferraço. All rights reserved.
 //
 
 import UIKit
@@ -11,44 +11,38 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
-
+    
+    var gameScene: GameScene!
+    let userRecord = UserDefaults.standard
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
+            if let scene = GameScene(fileNamed: "GameScene") {
+                
+                gameScene = scene
                 // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
+                scene.scaleMode = .fill
                 
                 // Present the scene
                 view.presentScene(scene)
             }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
         }
-    }
-
-    override var shouldAutorotate: Bool {
-        return true
-    }
-
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
+        
+        if userRecord.value(forKey: "score") == nil {
+            userRecord.set(0, forKey: "score")
         }
+        else {
+            userRecord.set(0, forKey: "score")
+        }
+        
+        
+        scoreLabel.adjustsFontSizeToFitWidth = true
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
-    }
-
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  WatchGame
 //
-//  Created by Pedro Gomes Branco on 26/09/16.
-//  Copyright © 2016 Pedro Gomes Branco. All rights reserved.
+//  Created by Lucas Ferraço on 29/09/16.
+//  Copyright © 2016 Lucas Ferraço. All rights reserved.
 //
 
 import UIKit

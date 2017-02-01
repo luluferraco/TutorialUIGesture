@@ -7,27 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24F10AE91D9954CB009A2824 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F10AE81D9954CB009A2824 /* AppDelegate.swift */; };
 		24F10AEB1D9954CB009A2824 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24F10AEA1D9954CB009A2824 /* GameScene.sks */; };
-		24F10AED1D9954CB009A2824 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24F10AEC1D9954CB009A2824 /* Actions.sks */; };
 		24F10AEF1D9954CB009A2824 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F10AEE1D9954CB009A2824 /* GameScene.swift */; };
 		24F10AF11D9954CB009A2824 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F10AF01D9954CB009A2824 /* GameViewController.swift */; };
 		24F10AF41D9954CB009A2824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F10AF21D9954CB009A2824 /* Main.storyboard */; };
 		24F10AF61D9954CB009A2824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F10AF51D9954CB009A2824 /* Assets.xcassets */; };
 		24F10AF91D9954CB009A2824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F10AF71D9954CB009A2824 /* LaunchScreen.storyboard */; };
+		3D5F6D5B1E4036570088FE3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F6D5A1E4036570088FE3A /* AppDelegate.swift */; };
+		3DCA61101D9DAE9800650F37 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA610F1D9DAE9800650F37 /* Clock.swift */; };
+		3DCA617D1D9DC13200650F37 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA617C1D9DC13200650F37 /* HomeViewController.swift */; };
+		3DCA61811D9DC90300650F37 /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA61801D9DC90300650F37 /* InstructionsViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		24F10B2C1D9954DF009A2824 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		24F10AE51D9954CB009A2824 /* WatchGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		24F10AE81D9954CB009A2824 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24F10AEA1D9954CB009A2824 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		24F10AEC1D9954CB009A2824 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		24F10AEE1D9954CB009A2824 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		24F10AF01D9954CB009A2824 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		24F10AF31D9954CB009A2824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24F10AF51D9954CB009A2824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24F10AF81D9954CB009A2824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24F10AFA1D9954CB009A2824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5F6D5A1E4036570088FE3A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DCA610F1D9DAE9800650F37 /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		3DCA617C1D9DC13200650F37 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3DCA61801D9DC90300650F37 /* InstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +77,35 @@
 		24F10AE71D9954CB009A2824 /* WatchGame */ = {
 			isa = PBXGroup;
 			children = (
-				24F10AE81D9954CB009A2824 /* AppDelegate.swift */,
-				24F10AEA1D9954CB009A2824 /* GameScene.sks */,
-				24F10AEC1D9954CB009A2824 /* Actions.sks */,
-				24F10AEE1D9954CB009A2824 /* GameScene.swift */,
-				24F10AF01D9954CB009A2824 /* GameViewController.swift */,
-				24F10AF21D9954CB009A2824 /* Main.storyboard */,
+				3D8096F51E3A703900147F77 /* Views */,
+				3D5470A81D9DFF1800EBDABE /* Controllers */,
 				24F10AF51D9954CB009A2824 /* Assets.xcassets */,
-				24F10AF71D9954CB009A2824 /* LaunchScreen.storyboard */,
 				24F10AFA1D9954CB009A2824 /* Info.plist */,
 			);
 			path = WatchGame;
+			sourceTree = "<group>";
+		};
+		3D5470A81D9DFF1800EBDABE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D5F6D5A1E4036570088FE3A /* AppDelegate.swift */,
+				3DCA610F1D9DAE9800650F37 /* Clock.swift */,
+				24F10AEE1D9954CB009A2824 /* GameScene.swift */,
+				24F10AF01D9954CB009A2824 /* GameViewController.swift */,
+				3DCA617C1D9DC13200650F37 /* HomeViewController.swift */,
+				3DCA61801D9DC90300650F37 /* InstructionsViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3D8096F51E3A703900147F77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24F10AEA1D9954CB009A2824 /* GameScene.sks */,
+				24F10AF21D9954CB009A2824 /* Main.storyboard */,
+				24F10AF71D9954CB009A2824 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +118,7 @@
 				24F10AE11D9954CB009A2824 /* Sources */,
 				24F10AE21D9954CB009A2824 /* Frameworks */,
 				24F10AE31D9954CB009A2824 /* Resources */,
+				24F10B2C1D9954DF009A2824 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -100,12 +136,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Pedro Gomes Branco";
 				TargetAttributes = {
 					24F10AE41D9954CB009A2824 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 258X7LU8QG;
+						DevelopmentTeam = 6PMD3Q4LVK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,7 +173,6 @@
 				24F10AEB1D9954CB009A2824 /* GameScene.sks in Resources */,
 				24F10AF61D9954CB009A2824 /* Assets.xcassets in Resources */,
 				24F10AF91D9954CB009A2824 /* LaunchScreen.storyboard in Resources */,
-				24F10AED1D9954CB009A2824 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,9 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5F6D5B1E4036570088FE3A /* AppDelegate.swift in Sources */,
+				3DCA61811D9DC90300650F37 /* InstructionsViewController.swift in Sources */,
+				3DCA617D1D9DC13200650F37 /* HomeViewController.swift in Sources */,
 				24F10AEF1D9954CB009A2824 /* GameScene.swift in Sources */,
 				24F10AF11D9954CB009A2824 /* GameViewController.swift in Sources */,
-				24F10AE91D9954CB009A2824 /* AppDelegate.swift in Sources */,
+				3DCA61101D9DAE9800650F37 /* Clock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +217,7 @@
 		24F10AFB1D9954CB009A2824 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -194,6 +232,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -229,7 +268,7 @@
 		24F10AFC1D9954CB009A2824 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -244,6 +283,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -272,8 +312,9 @@
 		24F10AFE1D9954CB009A2824 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 258X7LU8QG;
+				DEVELOPMENT_TEAM = 6PMD3Q4LVK;
 				INFOPLIST_FILE = WatchGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pedrogomesbranco.WatchGame;
@@ -285,8 +326,9 @@
 		24F10AFF1D9954CB009A2824 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 258X7LU8QG;
+				DEVELOPMENT_TEAM = 6PMD3Q4LVK;
 				INFOPLIST_FILE = WatchGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pedrogomesbranco.WatchGame;
@@ -314,6 +356,7 @@
 				24F10AFF1D9954CB009A2824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
