@@ -8,4 +8,4 @@ Repositório relativo ao tutorial de UIGesture aplicado a SpriteKit feito em Swi
 Repository related to the UIGesture with SpriteKit (made in Swift 3) tutorial hosted on [Swift PUC-Rio YouTube channel](https://www.youtube.com/channel/UCWb9EHguiXaEvLcGZiydIqA).
 
 ## Link para o vídeo-tutorial:
-Em breve.
+[Tutorial de UIGesture para iOS feito em Swift 3.0](https://www.youtube.com/watch?v=JxEUuD_OsfA)
